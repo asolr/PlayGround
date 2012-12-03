@@ -1,0 +1,24 @@
+<html>
+  <head>
+  <title>HTML / JavaScript Playground!</title>
+  <script src="play.js" charset="utf-8" type="text/javascript"></script>
+  </head>
+  <body>
+  <h2>HTML <span id="playhelp"></span></h2>
+  <textarea name="playhtml" id="playhtml" rows="10" cols="120">
+    <h1>I told everyone!!!</h1>
+    <div id="mydiv"></div>
+  </textarea>
+  <h2>JavaScript <span id="playhelpjs"></span></h2>
+  <textarea name="playjs" id="playjs" rows="10" cols="120">
+    function help(someone){
+      var are = " are awesome and we should work together!";
+      document.getElementById("mydiv").innerHTML = someone + are;
+    }
+    help("you");
+  </textarea><br />
+  <button type="button" id="submit" onclick="play()">Play</button><br />
+  <h2>VIEW</h2><br />
+  <div id="playarea"></div>
+  </body>
+</html>
